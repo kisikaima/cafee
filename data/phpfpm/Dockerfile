@@ -12,4 +12,5 @@ RUN set -x && \
 RUN set -x && \
   deluser www-data && \
   addgroup -g 50 -S www-data && \
-  adduser -u 1000 -D -S -G www-data www-data 
+  adduser -u 1000 -D -S -G www-data www-data
+ENV PATH=$PATH:/var/www/html/vendor/bin/ 
