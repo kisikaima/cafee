@@ -7,6 +7,7 @@
 		<meta name="keywords" content="サイトキーワードを,で区切って入力">
 		<link rel="stylesheet" href="sample.css">
 		<script src="sample.js"></script>
+		<?= $this->Html->script('/js/vue.js') ?>
 	</head>
 	<body>
 		<!----- ヘッダー ----->
@@ -28,5 +29,17 @@
 		<!----- フッター ----->
 		<footer>フッター</footer>
 		<!----- フッター END ----->
+		<div id="app">
+  			{{ message }}
+		</div>
+
+		<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Vue!'
+			}
+		})
+		</script>
 	</body>
 </html>
