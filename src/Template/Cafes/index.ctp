@@ -1,3 +1,7 @@
+<?php
+    echo $this->Html->css('index');
+	echo $this->Html->css('reset');
+?>
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -17,13 +21,12 @@
 		<!----- ヘッダー END ----->
 		
 		<!----- メインコンテンツ ----->
-		<article>
-			<h1>タイトル</h1>
-			<section>
-				<h2>タイトル</h2>
-				<p>コンテンツの内容</p>
-			</section>
-		</article>
+		<div>
+			<div>
+				
+			</div>
+
+		</div>
 		<!----- メインコンテンツ END ----->
 		
 		<!----- フッター ----->

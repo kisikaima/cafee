@@ -8,4 +8,7 @@ class CafesController extends AppController
     public function index(){
         $this->layout = "";
     }
+    public function pre(){
+        $this->layout = "";
+    }
 }
